@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lofi Em Không Khóc</title>
+    <style>
+        /* Toàn bộ body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Màu đen cho nền */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Video container */
+        .video-container {
+            position: relative;
+            width: 80%; /* Độ rộng video */
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        /* Video */
+        video {
+            width: 100%;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        /* Tên tác giả */
+        .author {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        /* Tên bài hát */
+        .song-title {
+            margin-top: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px; /* Dịch footer lên trên một chút */
+            padding: 20px;
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            width: 100%;
+            box-shadow: 0px -4px 10px rgba(255, 255, 255, 0.2); /* Tạo hiệu ứng nổi bật */
+            border-radius: 8px 8px 0 0; /* Bo tròn góc trên của footer */
+        }
+
+        /* Ẩn thanh audio */
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Video container -->
+    <div class="video-container">
+        <!-- Video -->
+        <video loop autoplay muted controls>
+            <source src="/folder/y2mate.com - chill vibes lofi  sleep_360P.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ phát video.
+        </video>
+        <!-- Audio (được ẩn) -->
+        <audio loop autoplay>
+            <source src="/folder/Em Không Khóc (feat. Vũ Phụng Tiên) - buitruonglinh.mp3" type="audio/mpeg">
+            <source src="/folder/Em Không Khóc (feat. Vũ Phụng Tiên) - buitruonglinh.wav" type="audio/wav">
+            Trình duyệt của bạn không hỗ trợ phát âm thanh.
+        </audio>
+    </div>
+    <!-- Tên tác giả -->
+    <div class="author">builinhtruong</div>
+    <!-- Tên bài hát -->
+    <div class="song-title">Em Không Khóc</div>
+
+    <!-- Footer -->
+    <footer>
+        Cảm ơn bạn đã ghé qua! Chúc một ngày chill vibes tràn đầy cảm hứng ❤️ - Code by ChienPN.
+    </footer>
+</body>
+
+</html>

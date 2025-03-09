@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lofi Em Không Khóc</title>
+    <style>
+        /* Toàn bộ body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Màu đen cho nền */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* GIF container */
+        .video-container {
+            position: relative;
+            width: 90%; /* Tăng kích thước GIF */
+            max-width: 900px; /* Độ rộng tối đa */
+            margin-bottom: 20px; /* Tạo khoảng trống với phần dưới */
+        }
+
+        /* GIF */
+        .gif {
+            width: 100%;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        /* Tên bài hát và tác giả */
+        .author {
+            margin-top: 20px;
+            font-size: 20px; /* Kích thước chữ lớn hơn */
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px; /* Khoảng trống trên footer */
+            padding: 20px;
+            background-color: #111; /* Nền footer tối hơn */
+            color: #aaa; /* Màu chữ nhạt hơn */
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            width: 100%;
+            border-top: 2px solid #333; /* Đường viền trên footer */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- GIF container -->
+    <div class="video-container">
+        <!-- GIF -->
+        <img class="gif" src="/folder/video.gif" alt="GIF không tải được">
+        <!-- Audio -->
+        <audio loop autoplay style="display: none;">
+            <source src="/folder/Em Không Khóc (feat. Vũ Phụng Tiên) - buitruonglinh.mp3" type="audio/mpeg">
+            <source src="/folder/Em Không Khóc (feat. Vũ Phụng Tiên) - buitruonglinh.wav" type="audio/wav">
+            Trình duyệt của bạn không hỗ trợ phát âm thanh.
+        </audio>
+    </div>
+    <!-- Tên bài hát và tác giả -->
+    <div class="author">Em Không Khóc - builinhtruong</div>
+
+    <!-- Footer -->
+    <footer>
+        Cảm ơn bạn đã ghé thăm! Hy vọng bạn có những phút giây thật chill và đầy cảm hứng. ❤️<br>
+        <strong>Code by ChienPN</strong>
+    </footer>
+</body>
+
+</html>

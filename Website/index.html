@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill With Me</title>
+    <style>
+        /* Toàn bộ body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0808;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Container chính */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Tiêu đề danh sách */
+        h1 {
+            text-align: left;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        /* Danh sách video - xếp dọc */
+        .video-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Phần tử video */
+        .video-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        .video-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Ảnh video */
+        .video-item img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Thông tin video */
+        .video-info {
+            text-align: left;
+        }
+
+        .video-info h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 0 0 5px;
+        }
+
+        .video-info p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        CHILL WITH ME
+    </header>
+
+    <div class="container">
+        <h1>Danh sách nhạc</h1>
+        <div class="video-list">
+            <!-- Video 1 -->
+            <div class="video-item" onclick="playSound('audio1.mp3')">
+                <img src="/folder/hinh1.png" alt="Video 1">
+                <div class="video-info">
+                    <h3>Bài nhạc 1</h3>
+                    <p>Ca sĩ: Nghệ sĩ 1</p>
+                </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="video-item" onclick="navigateToPage('/page2.html')">
+                <img src="/folder/video.gif" alt="Video 2">
+                <div class="video-info">
+                    <h3>Bài nhạc 2</h3>
+                    <p>Ca sĩ: Nghệ sĩ 2</p>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="video-item" onclick="playSound('audio3.mp3')">
+                <img src="/folder/hinh3.png" alt="Video 3">
+                <div class="video-info">
+                    <h3>Bài nhạc 3</h3>
+                    <p>Ca sĩ: Nghệ sĩ 3</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script>
+            // Hàm chuyển đến trang khác
+            function navigateToPage(pageUrl) {
+                window.location.href = pageUrl; // Điều hướng sang trang mới
+            }
+        </script>
+</body>
+
+</html>
